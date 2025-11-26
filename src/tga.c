@@ -39,28 +39,41 @@ static INLINE unsigned char *raw_tga_read8(unsigned char *b, int w, PACKFILE *f)
 
 /* rle_tga_read8:
  *  Helper for reading 256-color RLE data from TGA files.
+ *  Returns pointer past last written byte, or NULL on error.
  */
-static void rle_tga_read8(unsigned char *b, int w, PACKFILE *f)
+static unsigned char *rle_tga_read8(unsigned char *b, int w, PACKFILE *f)
 {
    int value, count, c = 0;
 
    do {
       count = pack_getc(f);
+      if (count == EOF)
+	 return NULL;
       if (count & 0x80) {
 	 /* run-length packet */
 	 count = (count & 0x7F) + 1;
+	 if (c + count > w)
+	    count = w - c;
 	 c += count;
 	 value = pack_getc(f);
+	 if (value == EOF)
+	    return NULL;
 	 while (count--)
 	    *b++ = value;
       }
       else {
 	 /* raw packet */
 	 count++;
+	 if (c + count > w)
+	    count = w - c;
 	 c += count;
 	 b = raw_tga_read8(b, count, f);
+	 if (pack_feof(f))
+	    return NULL;
       }
    } while (c < w);
+
+   return b;
 }
 
 
@@ -98,28 +111,41 @@ static unsigned int *raw_tga_read32(unsigned int *b, int w, PACKFILE *f)
 
 /* rle_tga_read32:
  *  Helper for reading 32-bit RLE data from TGA files.
+ *  Returns pointer past last written element, or NULL on error.
  */
-static void rle_tga_read32(unsigned int *b, int w, PACKFILE *f)
+static unsigned int *rle_tga_read32(unsigned int *b, int w, PACKFILE *f)
 {
    int color, count, c = 0;
 
    do {
       count = pack_getc(f);
+      if (count == EOF)
+	 return NULL;
       if (count & 0x80) {
 	 /* run-length packet */
 	 count = (count & 0x7F) + 1;
+	 if (c + count > w)
+	    count = w - c;
 	 c += count;
 	 color = single_tga_read32(f);
+	 if (pack_feof(f))
+	    return NULL;
 	 while (count--)
 	    *b++ = color;
       }
       else {
 	 /* raw packet */
 	 count++;
+	 if (c + count > w)
+	    count = w - c;
 	 c += count;
 	 b = raw_tga_read32(b, count, f);
+	 if (pack_feof(f))
+	    return NULL;
       }
    } while (c < w);
+
+   return b;
 }
 
 
@@ -159,18 +185,25 @@ static unsigned char *raw_tga_read24(unsigned char *b, int w, PACKFILE *f)
 
 /* rle_tga_read24:
  *  Helper for reading 24-bit RLE data from TGA files.
+ *  Returns pointer past last written byte, or NULL on error.
  */
-static void rle_tga_read24(unsigned char *b, int w, PACKFILE *f)
+static unsigned char *rle_tga_read24(unsigned char *b, int w, PACKFILE *f)
 {
    int color, count, c = 0;
 
    do {
       count = pack_getc(f);
+      if (count == EOF)
+	 return NULL;
       if (count & 0x80) {
 	 /* run-length packet */
 	 count = (count & 0x7F) + 1;
+	 if (c + count > w)
+	    count = w - c;
 	 c += count;
 	 color = single_tga_read24(f);
+	 if (pack_feof(f))
+	    return NULL;
 	 while (count--) {
 	    WRITE3BYTES(b, color);
 	    b += 3;
@@ -179,10 +212,16 @@ static void rle_tga_read24(unsigned char *b, int w, PACKFILE *f)
       else {
 	 /* raw packet */
 	 count++;
+	 if (c + count > w)
+	    count = w - c;
 	 c += count;
 	 b = raw_tga_read24(b, count, f);
+	 if (pack_feof(f))
+	    return NULL;
       }
    } while (c < w);
+
+   return b;
 }
 
 
@@ -195,6 +234,7 @@ static INLINE int single_tga_read16(PACKFILE *f)
    int value;
 
    value = pack_igetw(f);
+   value &= 0x7FFF; /* mask out 1-bit alpha value */
 
    return (((value >> 10) & 0x1F) << _rgb_r_shift_15) |
 	  (((value >> 5) & 0x1F) << _rgb_g_shift_15)  |
@@ -218,28 +258,41 @@ static unsigned short *raw_tga_read16(unsigned short *b, int w, PACKFILE *f)
 
 /* rle_tga_read16:
  *  Helper for reading 16-bit RLE data from TGA files.
+ *  Returns pointer past last written element, or NULL on error.
  */
-static void rle_tga_read16(unsigned short *b, int w, PACKFILE *f)
+static unsigned short *rle_tga_read16(unsigned short *b, int w, PACKFILE *f)
 {
    int color, count, c = 0;
 
    do {
       count = pack_getc(f);
+      if (count == EOF)
+	 return NULL;
       if (count & 0x80) {
 	 /* run-length packet */
 	 count = (count & 0x7F) + 1;
+	 if (c + count > w)
+	    count = w - c;
 	 c += count;
 	 color = single_tga_read16(f);
+	 if (pack_feof(f))
+	    return NULL;
 	 while (count--)
 	    *b++ = color;
       }
       else {
 	 /* raw packet */
 	 count++;
+	 if (c + count > w)
+	    count = w - c;
 	 c += count;
 	 b = raw_tga_read16(b, count, f);
+	 if (pack_feof(f))
+	    return NULL;
       }
    } while (c < w);
+
+   return b;
 }
 
 
@@ -419,28 +472,44 @@ BITMAP *load_tga_pf(PACKFILE *f, RGB *pal)
 
 	 case 1:
 	 case 3:
-	    if (compressed)
-	       rle_tga_read8(bmp->line[yc], image_width, f);
+	    if (compressed) {
+	       if (!rle_tga_read8(bmp->line[yc], image_width, f)) {
+		  destroy_bitmap(bmp);
+		  return NULL;
+	       }
+	    }
 	    else
 	       raw_tga_read8(bmp->line[yc], image_width, f);
 	    break;
 
 	 case 2:
 	    if (bpp == 32) {
-	       if (compressed)
-		  rle_tga_read32((unsigned int *)bmp->line[yc], image_width, f);
+	       if (compressed) {
+		  if (!rle_tga_read32((unsigned int *)bmp->line[yc], image_width, f)) {
+		     destroy_bitmap(bmp);
+		     return NULL;
+		  }
+	       }
 	       else
 		  raw_tga_read32((unsigned int *)bmp->line[yc], image_width, f);
 	    }
 	    else if (bpp == 24) {
-	       if (compressed)
-		  rle_tga_read24(bmp->line[yc], image_width, f);
+	       if (compressed) {
+		  if (!rle_tga_read24(bmp->line[yc], image_width, f)) {
+		     destroy_bitmap(bmp);
+		     return NULL;
+		  }
+	       }
 	       else
 		  raw_tga_read24(bmp->line[yc], image_width, f);
 	    }
 	    else {
-	       if (compressed)
-		  rle_tga_read16((unsigned short *)bmp->line[yc], image_width, f);
+	       if (compressed) {
+		  if (!rle_tga_read16((unsigned short *)bmp->line[yc], image_width, f)) {
+		     destroy_bitmap(bmp);
+		     return NULL;
+		  }
+	       }
 	       else
 		  raw_tga_read16((unsigned short *)bmp->line[yc], image_width, f);
 	    }
