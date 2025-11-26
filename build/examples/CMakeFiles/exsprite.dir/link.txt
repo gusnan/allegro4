@@ -1,1 +1,0 @@
-/usr/bin/cc  -W -Wall -Wno-unused-parameter -Wdeclaration-after-statement -O2 -g -DNDEBUG -rdynamic -Wl,--dependency-file=CMakeFiles/exsprite.dir/link.d CMakeFiles/exsprite.dir/exsprite.c.o -o exsprite  -Wl,-rpath,/home/runner/work/allegro4/allegro4/build/lib ../lib/liballeg.so.4.4.4 -lm -Wl,-Bstatic -lrt -ldl -Wl,-Bdynamic
