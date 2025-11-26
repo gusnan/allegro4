@@ -126,6 +126,8 @@ static unsigned int *rle_tga_read32(unsigned int *b, int w, PACKFILE *f)
 	    count = w - c;
 	 c += count;
 	 color = single_tga_read32(f);
+	 if (pack_feof(f))
+	    return NULL;
 	 while (count--)
 	    *b++ = color;
       }
@@ -196,6 +198,8 @@ static unsigned char *rle_tga_read24(unsigned char *b, int w, PACKFILE *f)
 	    count = w - c;
 	 c += count;
 	 color = single_tga_read24(f);
+	 if (pack_feof(f))
+	    return NULL;
 	 while (count--) {
 	    WRITE3BYTES(b, color);
 	    b += 3;
@@ -265,6 +269,8 @@ static unsigned short *rle_tga_read16(unsigned short *b, int w, PACKFILE *f)
 	    count = w - c;
 	 c += count;
 	 color = single_tga_read16(f);
+	 if (pack_feof(f))
+	    return NULL;
 	 while (count--)
 	    *b++ = color;
       }
