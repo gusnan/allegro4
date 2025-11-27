@@ -1,0 +1,15 @@
+/home/runner/work/allegro4/allegro4/build/CMakeFiles/allegro.dir
+/home/runner/work/allegro4/allegro4/build/CMakeFiles/edit_cache.dir
+/home/runner/work/allegro4/allegro4/build/CMakeFiles/rebuild_cache.dir
+/home/runner/work/allegro4/allegro4/build/CMakeFiles/list_install_components.dir
+/home/runner/work/allegro4/allegro4/build/CMakeFiles/install.dir
+/home/runner/work/allegro4/allegro4/build/CMakeFiles/install/local.dir
+/home/runner/work/allegro4/allegro4/build/CMakeFiles/install/strip.dir
+/home/runner/work/allegro4/allegro4/build/docs/CMakeFiles/makedoc.dir
+/home/runner/work/allegro4/allegro4/build/docs/CMakeFiles/docs.dir
+/home/runner/work/allegro4/allegro4/build/docs/CMakeFiles/edit_cache.dir
+/home/runner/work/allegro4/allegro4/build/docs/CMakeFiles/rebuild_cache.dir
+/home/runner/work/allegro4/allegro4/build/docs/CMakeFiles/list_install_components.dir
+/home/runner/work/allegro4/allegro4/build/docs/CMakeFiles/install.dir
+/home/runner/work/allegro4/allegro4/build/docs/CMakeFiles/install/local.dir
+/home/runner/work/allegro4/allegro4/build/docs/CMakeFiles/install/strip.dir

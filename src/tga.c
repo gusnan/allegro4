@@ -49,6 +49,7 @@ static void rle_tga_read8(unsigned char *b, int w, PACKFILE *f)
       if (count & 0x80) {
 	 /* run-length packet */
 	 count = (count & 0x7F) + 1;
+	 if (count > w - c) count = w - c;
 	 c += count;
 	 value = pack_getc(f);
 	 while (count--)
@@ -57,6 +58,7 @@ static void rle_tga_read8(unsigned char *b, int w, PACKFILE *f)
       else {
 	 /* raw packet */
 	 count++;
+	 if (count > w - c) count = w - c;
 	 c += count;
 	 b = raw_tga_read8(b, count, f);
       }
@@ -108,6 +110,7 @@ static void rle_tga_read32(unsigned int *b, int w, PACKFILE *f)
       if (count & 0x80) {
 	 /* run-length packet */
 	 count = (count & 0x7F) + 1;
+	 if (count > w - c) count = w - c;
 	 c += count;
 	 color = single_tga_read32(f);
 	 while (count--)
@@ -116,6 +119,7 @@ static void rle_tga_read32(unsigned int *b, int w, PACKFILE *f)
       else {
 	 /* raw packet */
 	 count++;
+	 if (count > w - c) count = w - c;
 	 c += count;
 	 b = raw_tga_read32(b, count, f);
       }
@@ -169,6 +173,7 @@ static void rle_tga_read24(unsigned char *b, int w, PACKFILE *f)
       if (count & 0x80) {
 	 /* run-length packet */
 	 count = (count & 0x7F) + 1;
+	 if (count > w - c) count = w - c;
 	 c += count;
 	 color = single_tga_read24(f);
 	 while (count--) {
@@ -179,6 +184,7 @@ static void rle_tga_read24(unsigned char *b, int w, PACKFILE *f)
       else {
 	 /* raw packet */
 	 count++;
+	 if (count > w - c) count = w - c;
 	 c += count;
 	 b = raw_tga_read24(b, count, f);
       }
@@ -228,6 +234,7 @@ static void rle_tga_read16(unsigned short *b, int w, PACKFILE *f)
       if (count & 0x80) {
 	 /* run-length packet */
 	 count = (count & 0x7F) + 1;
+	 if (count > w - c) count = w - c;
 	 c += count;
 	 color = single_tga_read16(f);
 	 while (count--)
@@ -236,6 +243,7 @@ static void rle_tga_read16(unsigned short *b, int w, PACKFILE *f)
       else {
 	 /* raw packet */
 	 count++;
+	 if (count > w - c) count = w - c;
 	 c += count;
 	 b = raw_tga_read16(b, count, f);
       }
