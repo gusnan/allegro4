@@ -1,0 +1,1594 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:46 (project)"
+    message: |
+      The system is: Linux - 6.11.0-1018-azure - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:46 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:46 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/3.31.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/local/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:46 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-QdBLtD"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-QdBLtD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-QdBLtD'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9b7c1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9b7c1.dir/build.make CMakeFiles/cmTC_9b7c1.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-QdBLtD'
+        Building C object CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc   -v -o CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9b7c1.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_9b7c1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccl3QiRh.s
+        GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 38987c28e967c64056a6454abdef726e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9b7c1.dir/'
+         as -v --64 -o CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o /tmp/ccl3QiRh.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_9b7c1
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b7c1.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9b7c1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9b7c1.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNYiKZ2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9b7c1 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 13.3.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNYiKZ2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9b7c1 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.42
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9b7c1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9b7c1.'
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc  -v -Wl,-v -rdynamic CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o -o cmTC_9b7c1
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-QdBLtD'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/local/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:46 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/local/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:46 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-QdBLtD']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9b7c1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_9b7c1.dir/build.make CMakeFiles/cmTC_9b7c1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-QdBLtD']
+        ignore line: [Building C object CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc   -v -o CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9b7c1.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_9b7c1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccl3QiRh.s]
+        ignore line: [GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 38987c28e967c64056a6454abdef726e]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9b7c1.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o /tmp/ccl3QiRh.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_9b7c1]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b7c1.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9b7c1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9b7c1.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNYiKZ2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9b7c1 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccNYiKZ2.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_9b7c1] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 13.3.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNYiKZ2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9b7c1 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_9b7c1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/local/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:46 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.42
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/local/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:46 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-XbK6CH"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-XbK6CH"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-XbK6CH'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4c9d7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4c9d7.dir/build.make CMakeFiles/cmTC_4c9d7.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-XbK6CH'
+        Building CXX object CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/c++   -v -o CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c9d7.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_4c9d7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc5miKsu.s
+        GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/13
+         /usr/include/x86_64-linux-gnu/c++/13
+         /usr/include/c++/13/backward
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: c81c05345ce537099dafd5580045814a
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c9d7.dir/'
+         as -v --64 -o CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc5miKsu.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_4c9d7
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c9d7.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4c9d7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4c9d7.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvop6fb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4c9d7 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 13.3.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvop6fb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4c9d7 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.42
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4c9d7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4c9d7.'
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/c++  -v -Wl,-v -rdynamic CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4c9d7
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-XbK6CH'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/local/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:46 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/13]
+          add: [/usr/include/x86_64-linux-gnu/c++/13]
+          add: [/usr/include/c++/13/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/local/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:46 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-XbK6CH']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4c9d7/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_4c9d7.dir/build.make CMakeFiles/cmTC_4c9d7.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-XbK6CH']
+        ignore line: [Building CXX object CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/c++   -v -o CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c9d7.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_4c9d7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc5miKsu.s]
+        ignore line: [GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/13]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: c81c05345ce537099dafd5580045814a]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c9d7.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc5miKsu.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_4c9d7]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c9d7.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4c9d7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4c9d7.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvop6fb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4c9d7 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccvop6fb.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_4c9d7] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 13.3.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvop6fb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4c9d7 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_4c9d7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/local/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/local/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:46 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.42
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:136 (check_include_files)"
+    checks:
+      - "Looking for include file dirent.h"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-4aQxNm"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-4aQxNm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_DIRENT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-4aQxNm'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c908f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c908f.dir/build.make CMakeFiles/cmTC_c908f.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-4aQxNm'
+        Building C object CMakeFiles/cmTC_c908f.dir/ALLEGRO_HAVE_DIRENT_H.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc    -o CMakeFiles/cmTC_c908f.dir/ALLEGRO_HAVE_DIRENT_H.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-4aQxNm/ALLEGRO_HAVE_DIRENT_H.c
+        Linking C executable cmTC_c908f
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c908f.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -rdynamic CMakeFiles/cmTC_c908f.dir/ALLEGRO_HAVE_DIRENT_H.c.o -o cmTC_c908f
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-4aQxNm'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:137 (check_include_files)"
+    checks:
+      - "Looking for include file inttypes.h"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-bqoaTq"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-bqoaTq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-bqoaTq'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8f741/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8f741.dir/build.make CMakeFiles/cmTC_8f741.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-bqoaTq'
+        Building C object CMakeFiles/cmTC_8f741.dir/ALLEGRO_HAVE_INTTYPES_H.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc    -o CMakeFiles/cmTC_8f741.dir/ALLEGRO_HAVE_INTTYPES_H.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-bqoaTq/ALLEGRO_HAVE_INTTYPES_H.c
+        Linking C executable cmTC_8f741
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f741.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -rdynamic CMakeFiles/cmTC_8f741.dir/ALLEGRO_HAVE_INTTYPES_H.c.o -o cmTC_8f741
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-bqoaTq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:139 (check_include_files)"
+    checks:
+      - "Looking for include file linux/awe_voice.h"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-jWeI1R"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-jWeI1R"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_LINUX_AWE_VOICE_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-jWeI1R'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8de41/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8de41.dir/build.make CMakeFiles/cmTC_8de41.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-jWeI1R'
+        Building C object CMakeFiles/cmTC_8de41.dir/ALLEGRO_HAVE_LINUX_AWE_VOICE_H.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc    -o CMakeFiles/cmTC_8de41.dir/ALLEGRO_HAVE_LINUX_AWE_VOICE_H.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-jWeI1R/ALLEGRO_HAVE_LINUX_AWE_VOICE_H.c
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-jWeI1R/ALLEGRO_HAVE_LINUX_AWE_VOICE_H.c:2:10: fatal error: linux/awe_voice.h: No such file or directory
+            2 | #include <linux/awe_voice.h>
+              |          ^~~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_8de41.dir/build.make:81: CMakeFiles/cmTC_8de41.dir/ALLEGRO_HAVE_LINUX_AWE_VOICE_H.c.o] Error 1
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-jWeI1R'
+        gmake: *** [Makefile:134: cmTC_8de41/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:140 (check_include_files)"
+    checks:
+      - "Looking for include file linux/input.h"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-bG2GjE"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-bG2GjE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_LINUX_INPUT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-bG2GjE'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_644a8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_644a8.dir/build.make CMakeFiles/cmTC_644a8.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-bG2GjE'
+        Building C object CMakeFiles/cmTC_644a8.dir/ALLEGRO_HAVE_LINUX_INPUT_H.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc    -o CMakeFiles/cmTC_644a8.dir/ALLEGRO_HAVE_LINUX_INPUT_H.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-bG2GjE/ALLEGRO_HAVE_LINUX_INPUT_H.c
+        Linking C executable cmTC_644a8
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_644a8.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -rdynamic CMakeFiles/cmTC_644a8.dir/ALLEGRO_HAVE_LINUX_INPUT_H.c.o -o cmTC_644a8
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-bG2GjE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:143 (check_include_files)"
+    checks:
+      - "Looking for include files sys/types.h, linux/joystick.h"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-tVQryW"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-tVQryW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_LINUX_JOYSTICK_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-tVQryW'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_32c0d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_32c0d.dir/build.make CMakeFiles/cmTC_32c0d.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-tVQryW'
+        Building C object CMakeFiles/cmTC_32c0d.dir/ALLEGRO_HAVE_LINUX_JOYSTICK_H.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc    -o CMakeFiles/cmTC_32c0d.dir/ALLEGRO_HAVE_LINUX_JOYSTICK_H.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-tVQryW/ALLEGRO_HAVE_LINUX_JOYSTICK_H.c
+        Linking C executable cmTC_32c0d
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32c0d.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -rdynamic CMakeFiles/cmTC_32c0d.dir/ALLEGRO_HAVE_LINUX_JOYSTICK_H.c.o -o cmTC_32c0d
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-tVQryW'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:144 (check_include_files)"
+    checks:
+      - "Looking for include file linux/soundcard.h"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-dZ5Mfu"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-dZ5Mfu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_LINUX_SOUNDCARD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-dZ5Mfu'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ac5a6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ac5a6.dir/build.make CMakeFiles/cmTC_ac5a6.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-dZ5Mfu'
+        Building C object CMakeFiles/cmTC_ac5a6.dir/ALLEGRO_HAVE_LINUX_SOUNDCARD_H.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc    -o CMakeFiles/cmTC_ac5a6.dir/ALLEGRO_HAVE_LINUX_SOUNDCARD_H.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-dZ5Mfu/ALLEGRO_HAVE_LINUX_SOUNDCARD_H.c
+        Linking C executable cmTC_ac5a6
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac5a6.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -rdynamic CMakeFiles/cmTC_ac5a6.dir/ALLEGRO_HAVE_LINUX_SOUNDCARD_H.c.o -o cmTC_ac5a6
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-dZ5Mfu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:145 (check_include_files)"
+    checks:
+      - "Looking for include file machine/soundcard.h"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-QB1WWD"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-QB1WWD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_MACHINE_SOUNDCARD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-QB1WWD'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c954f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c954f.dir/build.make CMakeFiles/cmTC_c954f.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-QB1WWD'
+        Building C object CMakeFiles/cmTC_c954f.dir/ALLEGRO_HAVE_MACHINE_SOUNDCARD_H.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc    -o CMakeFiles/cmTC_c954f.dir/ALLEGRO_HAVE_MACHINE_SOUNDCARD_H.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-QB1WWD/ALLEGRO_HAVE_MACHINE_SOUNDCARD_H.c
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-QB1WWD/ALLEGRO_HAVE_MACHINE_SOUNDCARD_H.c:2:10: fatal error: machine/soundcard.h: No such file or directory
+            2 | #include <machine/soundcard.h>
+              |          ^~~~~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_c954f.dir/build.make:81: CMakeFiles/cmTC_c954f.dir/ALLEGRO_HAVE_MACHINE_SOUNDCARD_H.c.o] Error 1
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-QB1WWD'
+        gmake: *** [Makefile:134: cmTC_c954f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:146 (check_include_files)"
+    checks:
+      - "Looking for include file soundcard.h"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-rkP0gw"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-rkP0gw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_SOUNDCARD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-rkP0gw'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2b8c8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2b8c8.dir/build.make CMakeFiles/cmTC_2b8c8.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-rkP0gw'
+        Building C object CMakeFiles/cmTC_2b8c8.dir/ALLEGRO_HAVE_SOUNDCARD_H.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc    -o CMakeFiles/cmTC_2b8c8.dir/ALLEGRO_HAVE_SOUNDCARD_H.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-rkP0gw/ALLEGRO_HAVE_SOUNDCARD_H.c
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-rkP0gw/ALLEGRO_HAVE_SOUNDCARD_H.c:2:10: fatal error: soundcard.h: No such file or directory
+            2 | #include <soundcard.h>
+              |          ^~~~~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_2b8c8.dir/build.make:81: CMakeFiles/cmTC_2b8c8.dir/ALLEGRO_HAVE_SOUNDCARD_H.c.o] Error 1
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-rkP0gw'
+        gmake: *** [Makefile:134: cmTC_2b8c8/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:147 (check_include_files)"
+    checks:
+      - "Looking for include file stdint.h"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-9JPH2c"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-9JPH2c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-9JPH2c'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f2ab9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f2ab9.dir/build.make CMakeFiles/cmTC_f2ab9.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-9JPH2c'
+        Building C object CMakeFiles/cmTC_f2ab9.dir/ALLEGRO_HAVE_STDINT_H.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc    -o CMakeFiles/cmTC_f2ab9.dir/ALLEGRO_HAVE_STDINT_H.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-9JPH2c/ALLEGRO_HAVE_STDINT_H.c
+        Linking C executable cmTC_f2ab9
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2ab9.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -rdynamic CMakeFiles/cmTC_f2ab9.dir/ALLEGRO_HAVE_STDINT_H.c.o -o cmTC_f2ab9
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-9JPH2c'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:148 (check_include_files)"
+    checks:
+      - "Looking for include file sys/io.h"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-33ES4f"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-33ES4f"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_SYS_IO_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-33ES4f'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_38ab6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_38ab6.dir/build.make CMakeFiles/cmTC_38ab6.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-33ES4f'
+        Building C object CMakeFiles/cmTC_38ab6.dir/ALLEGRO_HAVE_SYS_IO_H.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc    -o CMakeFiles/cmTC_38ab6.dir/ALLEGRO_HAVE_SYS_IO_H.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-33ES4f/ALLEGRO_HAVE_SYS_IO_H.c
+        Linking C executable cmTC_38ab6
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38ab6.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -rdynamic CMakeFiles/cmTC_38ab6.dir/ALLEGRO_HAVE_SYS_IO_H.c.o -o cmTC_38ab6
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-33ES4f'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:149 (check_include_files)"
+    checks:
+      - "Looking for include file sys/stat.h"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-8JfsTD"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-8JfsTD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_SYS_STAT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-8JfsTD'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_49831/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_49831.dir/build.make CMakeFiles/cmTC_49831.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-8JfsTD'
+        Building C object CMakeFiles/cmTC_49831.dir/ALLEGRO_HAVE_SYS_STAT_H.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc    -o CMakeFiles/cmTC_49831.dir/ALLEGRO_HAVE_SYS_STAT_H.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-8JfsTD/ALLEGRO_HAVE_SYS_STAT_H.c
+        Linking C executable cmTC_49831
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49831.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -rdynamic CMakeFiles/cmTC_49831.dir/ALLEGRO_HAVE_SYS_STAT_H.c.o -o cmTC_49831
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-8JfsTD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:150 (check_include_files)"
+    checks:
+      - "Looking for include file sys/time.h"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-z7L1mZ"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-z7L1mZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_SYS_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-z7L1mZ'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_36c24/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_36c24.dir/build.make CMakeFiles/cmTC_36c24.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-z7L1mZ'
+        Building C object CMakeFiles/cmTC_36c24.dir/ALLEGRO_HAVE_SYS_TIME_H.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc    -o CMakeFiles/cmTC_36c24.dir/ALLEGRO_HAVE_SYS_TIME_H.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-z7L1mZ/ALLEGRO_HAVE_SYS_TIME_H.c
+        Linking C executable cmTC_36c24
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36c24.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -rdynamic CMakeFiles/cmTC_36c24.dir/ALLEGRO_HAVE_SYS_TIME_H.c.o -o cmTC_36c24
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-z7L1mZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:151 (check_include_files)"
+    checks:
+      - "Looking for include file sys/soundcard.h"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-fKdSO4"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-fKdSO4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_SYS_SOUNDCARD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-fKdSO4'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1cfbc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1cfbc.dir/build.make CMakeFiles/cmTC_1cfbc.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-fKdSO4'
+        Building C object CMakeFiles/cmTC_1cfbc.dir/ALLEGRO_HAVE_SYS_SOUNDCARD_H.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc    -o CMakeFiles/cmTC_1cfbc.dir/ALLEGRO_HAVE_SYS_SOUNDCARD_H.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-fKdSO4/ALLEGRO_HAVE_SYS_SOUNDCARD_H.c
+        Linking C executable cmTC_1cfbc
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cfbc.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -rdynamic CMakeFiles/cmTC_1cfbc.dir/ALLEGRO_HAVE_SYS_SOUNDCARD_H.c.o -o cmTC_1cfbc
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-fKdSO4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:152 (check_include_files)"
+    checks:
+      - "Looking for include file sys/utsname.h"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UbrbxP"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UbrbxP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_SYS_UTSNAME_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UbrbxP'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b2214/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b2214.dir/build.make CMakeFiles/cmTC_b2214.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UbrbxP'
+        Building C object CMakeFiles/cmTC_b2214.dir/ALLEGRO_HAVE_SYS_UTSNAME_H.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc    -o CMakeFiles/cmTC_b2214.dir/ALLEGRO_HAVE_SYS_UTSNAME_H.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UbrbxP/ALLEGRO_HAVE_SYS_UTSNAME_H.c
+        Linking C executable cmTC_b2214
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2214.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -rdynamic CMakeFiles/cmTC_b2214.dir/ALLEGRO_HAVE_SYS_UTSNAME_H.c.o -o cmTC_b2214
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UbrbxP'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:154 (check_function_exists)"
+    checks:
+      - "Looking for getexecname"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-fsR9Lz"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-fsR9Lz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_GETEXECNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-fsR9Lz'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eef36/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_eef36.dir/build.make CMakeFiles/cmTC_eef36.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-fsR9Lz'
+        Building C object CMakeFiles/cmTC_eef36.dir/CheckFunctionExists.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc   -DCHECK_FUNCTION_EXISTS=getexecname -o CMakeFiles/cmTC_eef36.dir/CheckFunctionExists.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-fsR9Lz/CheckFunctionExists.c
+        Linking C executable cmTC_eef36
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eef36.dir/link.txt --verbose=1
+        /usr/bin/ld: CMakeFiles/cmTC_eef36.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x14): undefined reference to `getexecname'
+        collect2: error: ld returned 1 exit status
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc  -DCHECK_FUNCTION_EXISTS=getexecname -rdynamic CMakeFiles/cmTC_eef36.dir/CheckFunctionExists.c.o -o cmTC_eef36
+        gmake[1]: *** [CMakeFiles/cmTC_eef36.dir/build.make:102: cmTC_eef36] Error 1
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-fsR9Lz'
+        gmake: *** [Makefile:134: cmTC_eef36/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:155 (check_function_exists)"
+    checks:
+      - "Looking for memcmp"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ynlhsy"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ynlhsy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_MEMCMP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ynlhsy'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_13d81/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_13d81.dir/build.make CMakeFiles/cmTC_13d81.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ynlhsy'
+        Building C object CMakeFiles/cmTC_13d81.dir/CheckFunctionExists.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc   -DCHECK_FUNCTION_EXISTS=memcmp -o CMakeFiles/cmTC_13d81.dir/CheckFunctionExists.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ynlhsy/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function ‘memcmp’; expected ‘int(const void *, const void *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ynlhsy/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ynlhsy/CheckFunctionExists.c:1:1: note: ‘memcmp’ is declared in header ‘<string.h>’
+          +++ |+#include <string.h>
+            1 | #ifdef CHECK_FUNCTION_EXISTS
+        Linking C executable cmTC_13d81
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13d81.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc  -DCHECK_FUNCTION_EXISTS=memcmp -rdynamic CMakeFiles/cmTC_13d81.dir/CheckFunctionExists.c.o -o cmTC_13d81
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ynlhsy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:156 (check_function_exists)"
+    checks:
+      - "Looking for mkstemp"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-VVZ9wa"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-VVZ9wa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_MKSTEMP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-VVZ9wa'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_92743/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_92743.dir/build.make CMakeFiles/cmTC_92743.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-VVZ9wa'
+        Building C object CMakeFiles/cmTC_92743.dir/CheckFunctionExists.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc   -DCHECK_FUNCTION_EXISTS=mkstemp -o CMakeFiles/cmTC_92743.dir/CheckFunctionExists.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-VVZ9wa/CheckFunctionExists.c
+        Linking C executable cmTC_92743
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92743.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc  -DCHECK_FUNCTION_EXISTS=mkstemp -rdynamic CMakeFiles/cmTC_92743.dir/CheckFunctionExists.c.o -o cmTC_92743
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-VVZ9wa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:157 (check_function_exists)"
+    checks:
+      - "Looking for mmap"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ySTYwu"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ySTYwu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_MMAP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ySTYwu'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_429b4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_429b4.dir/build.make CMakeFiles/cmTC_429b4.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ySTYwu'
+        Building C object CMakeFiles/cmTC_429b4.dir/CheckFunctionExists.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc   -DCHECK_FUNCTION_EXISTS=mmap -o CMakeFiles/cmTC_429b4.dir/CheckFunctionExists.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ySTYwu/CheckFunctionExists.c
+        Linking C executable cmTC_429b4
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_429b4.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc  -DCHECK_FUNCTION_EXISTS=mmap -rdynamic CMakeFiles/cmTC_429b4.dir/CheckFunctionExists.c.o -o cmTC_429b4
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ySTYwu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:158 (check_function_exists)"
+    checks:
+      - "Looking for mprotect"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-OuNkCe"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-OuNkCe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_MPROTECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-OuNkCe'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_67c7b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_67c7b.dir/build.make CMakeFiles/cmTC_67c7b.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-OuNkCe'
+        Building C object CMakeFiles/cmTC_67c7b.dir/CheckFunctionExists.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc   -DCHECK_FUNCTION_EXISTS=mprotect -o CMakeFiles/cmTC_67c7b.dir/CheckFunctionExists.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-OuNkCe/CheckFunctionExists.c
+        Linking C executable cmTC_67c7b
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67c7b.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc  -DCHECK_FUNCTION_EXISTS=mprotect -rdynamic CMakeFiles/cmTC_67c7b.dir/CheckFunctionExists.c.o -o cmTC_67c7b
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-OuNkCe'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:159 (check_function_exists)"
+    checks:
+      - "Looking for sched_yield"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-2iKP33"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-2iKP33"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_SCHED_YIELD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-2iKP33'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_23321/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_23321.dir/build.make CMakeFiles/cmTC_23321.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-2iKP33'
+        Building C object CMakeFiles/cmTC_23321.dir/CheckFunctionExists.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc   -DCHECK_FUNCTION_EXISTS=sched_yield -o CMakeFiles/cmTC_23321.dir/CheckFunctionExists.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-2iKP33/CheckFunctionExists.c
+        Linking C executable cmTC_23321
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23321.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc  -DCHECK_FUNCTION_EXISTS=sched_yield -rdynamic CMakeFiles/cmTC_23321.dir/CheckFunctionExists.c.o -o cmTC_23321
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-2iKP33'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:160 (check_function_exists)"
+    checks:
+      - "Looking for stricmp"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-T7O3kt"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-T7O3kt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_STRICMP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-T7O3kt'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7029d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7029d.dir/build.make CMakeFiles/cmTC_7029d.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-T7O3kt'
+        Building C object CMakeFiles/cmTC_7029d.dir/CheckFunctionExists.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc   -DCHECK_FUNCTION_EXISTS=stricmp -o CMakeFiles/cmTC_7029d.dir/CheckFunctionExists.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-T7O3kt/CheckFunctionExists.c
+        Linking C executable cmTC_7029d
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7029d.dir/link.txt --verbose=1
+        /usr/bin/ld: CMakeFiles/cmTC_7029d.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x14): undefined reference to `stricmp'
+        collect2: error: ld returned 1 exit status
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc  -DCHECK_FUNCTION_EXISTS=stricmp -rdynamic CMakeFiles/cmTC_7029d.dir/CheckFunctionExists.c.o -o cmTC_7029d
+        gmake[1]: *** [CMakeFiles/cmTC_7029d.dir/build.make:102: cmTC_7029d] Error 1
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-T7O3kt'
+        gmake: *** [Makefile:134: cmTC_7029d/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:161 (check_function_exists)"
+    checks:
+      - "Looking for strlwr"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-X3IWZl"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-X3IWZl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_STRLWR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-X3IWZl'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c40b8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c40b8.dir/build.make CMakeFiles/cmTC_c40b8.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-X3IWZl'
+        Building C object CMakeFiles/cmTC_c40b8.dir/CheckFunctionExists.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc   -DCHECK_FUNCTION_EXISTS=strlwr -o CMakeFiles/cmTC_c40b8.dir/CheckFunctionExists.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-X3IWZl/CheckFunctionExists.c
+        Linking C executable cmTC_c40b8
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c40b8.dir/link.txt --verbose=1
+        /usr/bin/ld: CMakeFiles/cmTC_c40b8.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x14): undefined reference to `strlwr'
+        collect2: error: ld returned 1 exit status
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc  -DCHECK_FUNCTION_EXISTS=strlwr -rdynamic CMakeFiles/cmTC_c40b8.dir/CheckFunctionExists.c.o -o cmTC_c40b8
+        gmake[1]: *** [CMakeFiles/cmTC_c40b8.dir/build.make:102: cmTC_c40b8] Error 1
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-X3IWZl'
+        gmake: *** [Makefile:134: cmTC_c40b8/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:162 (check_function_exists)"
+    checks:
+      - "Looking for strupr"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ziBGaK"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ziBGaK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_STRUPR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ziBGaK'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7c3de/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7c3de.dir/build.make CMakeFiles/cmTC_7c3de.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ziBGaK'
+        Building C object CMakeFiles/cmTC_7c3de.dir/CheckFunctionExists.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc   -DCHECK_FUNCTION_EXISTS=strupr -o CMakeFiles/cmTC_7c3de.dir/CheckFunctionExists.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ziBGaK/CheckFunctionExists.c
+        Linking C executable cmTC_7c3de
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c3de.dir/link.txt --verbose=1
+        /usr/bin/ld: CMakeFiles/cmTC_7c3de.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x14): undefined reference to `strupr'
+        collect2: error: ld returned 1 exit status
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc  -DCHECK_FUNCTION_EXISTS=strupr -rdynamic CMakeFiles/cmTC_7c3de.dir/CheckFunctionExists.c.o -o cmTC_7c3de
+        gmake[1]: *** [CMakeFiles/cmTC_7c3de.dir/build.make:102: cmTC_7c3de] Error 1
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-ziBGaK'
+        gmake: *** [Makefile:134: cmTC_7c3de/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:163 (check_function_exists)"
+    checks:
+      - "Looking for sysconf"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-O2tEh3"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-O2tEh3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_SYSCONF"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-O2tEh3'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5e3f6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5e3f6.dir/build.make CMakeFiles/cmTC_5e3f6.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-O2tEh3'
+        Building C object CMakeFiles/cmTC_5e3f6.dir/CheckFunctionExists.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc   -DCHECK_FUNCTION_EXISTS=sysconf -o CMakeFiles/cmTC_5e3f6.dir/CheckFunctionExists.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-O2tEh3/CheckFunctionExists.c
+        Linking C executable cmTC_5e3f6
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e3f6.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc  -DCHECK_FUNCTION_EXISTS=sysconf -rdynamic CMakeFiles/cmTC_5e3f6.dir/CheckFunctionExists.c.o -o cmTC_5e3f6
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-O2tEh3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/local/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:165 (check_c_source_compiles)"
+    checks:
+      - "Performing Test ALLEGRO_HAVE_SV_PROCFS_H"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UTqN8H"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UTqN8H"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_SV_PROCFS_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UTqN8H'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4a077/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4a077.dir/build.make CMakeFiles/cmTC_4a077.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UTqN8H'
+        Building C object CMakeFiles/cmTC_4a077.dir/src.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -DALLEGRO_HAVE_SV_PROCFS_H   -o CMakeFiles/cmTC_4a077.dir/src.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UTqN8H/src.c
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UTqN8H/src.c: In function ‘main’:
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UTqN8H/src.c:5:29: error: storage size of ‘psinfo’ isn’t known
+            5 |             struct prpsinfo psinfo;
+              |                             ^~~~~~
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UTqN8H/src.c:6:22: error: ‘PIOCPSINFO’ undeclared (first use in this function)
+            6 |             ioctl(0, PIOCPSINFO, &psinfo);
+              |                      ^~~~~~~~~~
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UTqN8H/src.c:6:22: note: each undeclared identifier is reported only once for each function it appears in
+        gmake[1]: *** [CMakeFiles/cmTC_4a077.dir/build.make:81: CMakeFiles/cmTC_4a077.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-UTqN8H'
+        gmake: *** [Makefile:134: cmTC_4a077/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/local/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:175 (check_c_source_compiles)"
+    checks:
+      - "Performing Test ALLEGRO_HAVE_PROCFS_ARGCV"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-r6waAL"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-r6waAL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_PROCFS_ARGCV"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-r6waAL'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_97f7e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_97f7e.dir/build.make CMakeFiles/cmTC_97f7e.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-r6waAL'
+        Building C object CMakeFiles/cmTC_97f7e.dir/src.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -DALLEGRO_HAVE_PROCFS_ARGCV   -o CMakeFiles/cmTC_97f7e.dir/src.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-r6waAL/src.c
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-r6waAL/src.c: In function ‘main’:
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-r6waAL/src.c:4:29: error: storage size of ‘psinfo’ isn’t known
+            4 |             struct prpsinfo psinfo;
+              |                             ^~~~~~
+        gmake[1]: *** [CMakeFiles/cmTC_97f7e.dir/build.make:81: CMakeFiles/cmTC_97f7e.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-r6waAL'
+        gmake: *** [Makefile:134: cmTC_97f7e/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/local/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:185 (check_c_source_compiles)"
+    checks:
+      - "Performing Test MAP_FAILED_DEFINED"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-18rThR"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-18rThR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "MAP_FAILED_DEFINED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-18rThR'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9a8b4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9a8b4.dir/build.make CMakeFiles/cmTC_9a8b4.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-18rThR'
+        Building C object CMakeFiles/cmTC_9a8b4.dir/src.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -DMAP_FAILED_DEFINED   -o CMakeFiles/cmTC_9a8b4.dir/src.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-18rThR/src.c
+        Linking C executable cmTC_9a8b4
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a8b4.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -rdynamic CMakeFiles/cmTC_9a8b4.dir/src.c.o -o cmTC_9a8b4
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-18rThR'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/usr/local/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "CMakeLists.txt:196 (check_c_source_runs)"
+    checks:
+      - "Performing Test ALLEGRO_USE_CONSTRUCTOR"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-F1rzhd"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-F1rzhd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_USE_CONSTRUCTOR_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-F1rzhd'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0bd9c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0bd9c.dir/build.make CMakeFiles/cmTC_0bd9c.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-F1rzhd'
+        Building C object CMakeFiles/cmTC_0bd9c.dir/src.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -DALLEGRO_USE_CONSTRUCTOR   -o CMakeFiles/cmTC_0bd9c.dir/src.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-F1rzhd/src.c
+        Linking C executable cmTC_0bd9c
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bd9c.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -rdynamic CMakeFiles/cmTC_0bd9c.dir/src.c.o -o cmTC_0bd9c
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-F1rzhd'
+        
+      exitCode: 0
+    runResult:
+      variable: "ALLEGRO_USE_CONSTRUCTOR_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/local/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:205 (check_c_source_compiles)"
+    checks:
+      - "Performing Test ALLEGRO_HAVE_POSIX_MONOTONIC_CLOCK"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-1PlgQT"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-1PlgQT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "ALLEGRO_HAVE_POSIX_MONOTONIC_CLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-1PlgQT'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b9817/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b9817.dir/build.make CMakeFiles/cmTC_b9817.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-1PlgQT'
+        Building C object CMakeFiles/cmTC_b9817.dir/src.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -DALLEGRO_HAVE_POSIX_MONOTONIC_CLOCK   -o CMakeFiles/cmTC_b9817.dir/src.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-1PlgQT/src.c
+        Linking C executable cmTC_b9817
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9817.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -rdynamic CMakeFiles/cmTC_b9817.dir/src.c.o -o cmTC_b9817
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-1PlgQT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/local/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/local/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/local/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:430 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-H5xnJL"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-H5xnJL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -W -Wall -Wno-unused-parameter -Wdeclaration-after-statement"
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-H5xnJL'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8dc5a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8dc5a.dir/build.make CMakeFiles/cmTC_8dc5a.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-H5xnJL'
+        Building C object CMakeFiles/cmTC_8dc5a.dir/src.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -W -Wall -Wno-unused-parameter -Wdeclaration-after-statement  -o CMakeFiles/cmTC_8dc5a.dir/src.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-H5xnJL/src.c
+        Linking C executable cmTC_8dc5a
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8dc5a.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc  -W -Wall -Wno-unused-parameter -Wdeclaration-after-statement  -rdynamic CMakeFiles/cmTC_8dc5a.dir/src.c.o -o cmTC_8dc5a
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-H5xnJL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/local/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/AllegroFindOSS.cmake:42 (check_c_source_compiles)"
+      - "CMakeLists.txt:449 (include)"
+    checks:
+      - "Performing Test OSS_COMPILES"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-qGVZzS"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-qGVZzS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -W -Wall -Wno-unused-parameter -Wdeclaration-after-statement"
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "OSS_COMPILES"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-qGVZzS'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_128c2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_128c2.dir/build.make CMakeFiles/cmTC_128c2.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-qGVZzS'
+        Building C object CMakeFiles/cmTC_128c2.dir/src.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -DALLEGRO_HAVE_LINUX_SOUNDCARD_H -DALLEGRO_HAVE_SYS_SOUNDCARD_H -DOSS_COMPILES  -W -Wall -Wno-unused-parameter -Wdeclaration-after-statement  -o CMakeFiles/cmTC_128c2.dir/src.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-qGVZzS/src.c
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-qGVZzS/src.c: In function ‘main’:
+        /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-qGVZzS/src.c:15:28: warning: unused variable ‘abi’ [-Wunused-variable]
+           15 |             audio_buf_info abi;
+              |                            ^~~
+        Linking C executable cmTC_128c2
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_128c2.dir/link.txt --verbose=1
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc  -W -Wall -Wno-unused-parameter -Wdeclaration-after-statement  -rdynamic CMakeFiles/cmTC_128c2.dir/src.c.o -o cmTC_128c2
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-qGVZzS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "CMakeLists.txt:483 (check_library_exists)"
+    checks:
+      - "Looking for alOpenPort in audio"
+    directories:
+      source: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-qpbsq7"
+      binary: "/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-qpbsq7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -W -Wall -Wno-unused-parameter -Wdeclaration-after-statement"
+      CMAKE_MODULE_PATH: "/home/runner/work/allegro4/allegro4/cmake"
+    buildResult:
+      variable: "SGIAUDIO_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-qpbsq7'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ea042/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ea042.dir/build.make CMakeFiles/cmTC_ea042.dir/build
+        gmake[1]: Entering directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-qpbsq7'
+        Building C object CMakeFiles/cmTC_ea042.dir/CheckFunctionExists.c.o
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc   -W -Wall -Wno-unused-parameter -Wdeclaration-after-statement -DCHECK_FUNCTION_EXISTS=alOpenPort -o CMakeFiles/cmTC_ea042.dir/CheckFunctionExists.c.o -c /home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-qpbsq7/CheckFunctionExists.c
+        Linking C executable cmTC_ea042
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea042.dir/link.txt --verbose=1
+        /usr/bin/ld: cannot find -laudio: No such file or directory
+        collect2: error: ld returned 1 exit status
+        /home/runner/work/allegro4/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc  -W -Wall -Wno-unused-parameter -Wdeclaration-after-statement -DCHECK_FUNCTION_EXISTS=alOpenPort -rdynamic CMakeFiles/cmTC_ea042.dir/CheckFunctionExists.c.o -o cmTC_ea042  -laudio
+        gmake[1]: *** [CMakeFiles/cmTC_ea042.dir/build.make:102: cmTC_ea042] Error 1
+        gmake[1]: Leaving directory '/home/runner/work/allegro4/allegro4/_codeql_build_dir/CMakeFiles/CMakeScratch/TryCompile-qpbsq7'
+        gmake: *** [Makefile:134: cmTC_ea042/fast] Error 2
+        
+      exitCode: 2
+...
